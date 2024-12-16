@@ -4,29 +4,28 @@ import TarjetaInicio from "./TarjetaInicio";
 const Inicio: React.FC = () => {
   const tarjetas = [
     {
-      titulo: "Mis Cursos",
-      descripcion: "Accede a tus cursos actuales y material de estudio.",
-      rutaBoton: "/mis-cursos",
-      textoBoton: "Ver Cursos",
+      titulo: "Módulo 1: Fundamentos del Inglés",
+      descripcion: "Aprende los conceptos básicos del idioma inglés.",
+      rutaBoton: "/modulo1",
+      textoBoton: "Comenzar Módulo 1",
     },
     {
-      titulo: "Calendario",
-      descripcion: "Revisa tus próximas clases y eventos importantes.",
-      rutaBoton: "/calendario",
-      textoBoton: "Ver Calendario",
+      titulo: "Módulo 2: Inglés Intermedio",
+      descripcion: "Mejora tus habilidades en inglés con temas más avanzados.",
+      rutaBoton: "/modulo2",
+      textoBoton: "Explorar Módulo 2",
     },
     {
-      titulo: "Tareas Pendientes",
-      descripcion: "Gestiona tus tareas y proyectos pendientes.",
-      rutaBoton: "/tareas",
-      textoBoton: "Ver Tareas",
+      titulo: "Módulo 3: Inglés Avanzado",
+      descripcion: "Perfecciona tu inglés con temas y ejercicios complejos.",
+      rutaBoton: "/modulo3",
+      textoBoton: "Acceder Módulo 3",
     },
-    // Puedes agregar más tarjetas aquí
   ];
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">Bienvenido a la página de inicio</h1>
+      <h1 className="mb-4">Bienvenido a tu Curso de Inglés</h1>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {tarjetas.map((tarjeta, index) => (
           <div key={index} className="col">

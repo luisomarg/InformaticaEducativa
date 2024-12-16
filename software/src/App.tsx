@@ -1,28 +1,23 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-import Login from "./components/Login";
-import RegistroUsuario from "./components/Registro";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Inicio from "./components/Inicio";
+import Modulo1 from "./modulos/Modulo1";
+import Login from "./components/Login";
+import Registro from "./components/Registro";
+import Gramatica from "./modulos/modulo1/Gramatica";
+import Vocabulario from "./modulos/modulo1/Vocabulario";
 
 const App: React.FC = () => {
-  console.log("App component rendered");
   return (
     <Router>
-      <div>
-        <h1>App is running</h1>
-        <Routes>
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Registro" element={<RegistroUsuario />} />
-          <Route path="/Inicio" element={<Inicio />} />
-          <Route path="/" element={<Navigate to="/Login" replace />} />
-          <Route path="*" element={<Navigate to="/Login" replace />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
+        <Route path="/modulo1" element={<Modulo1 />} />
+        <Route path="/modulo1/gramatica" element={<Gramatica />} />
+        <Route path="/modulo1/vocabulario" element={<Vocabulario />} />
+      </Routes>
     </Router>
   );
 };
