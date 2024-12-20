@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import Registro from "./components/Registro";
 import Gramatica from "./modulos/modulo1/Gramatica";
 import Vocabulario from "./modulos/modulo1/Vocabulario";
+import Pronunciacion from "./modulos/modulo1/Pronunciacion";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/modulo1" element={<Modulo1 />} />
         <Route path="/modulo1/gramatica" element={<Gramatica />} />
         <Route path="/modulo1/vocabulario" element={<Vocabulario />} />
+        <Route path="/modulo1/pronunciacion" element={<Pronunciacion />} />
       </Routes>
     </Router>
   );
