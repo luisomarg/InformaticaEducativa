@@ -4,17 +4,16 @@ import ListaSubmodulos from "../components/ListaSubmodulos";
 const Modulo1: React.FC = () => {
   const submodulos = [
     {
-      id: "gramatica",
+      id: "Introduccion",
       titulo: "Gramática Básica",
       descripcion: "Aprende las reglas gramaticales fundamentales del inglés.",
-      ruta: "/modulo1/gramatica",
+      ruta: "/modulo1/basico",
     },
     {
       id: "vocabulario",
-      titulo: "Vocabulario Esencial",
-      descripcion:
-        "Amplía tu vocabulario con palabras y frases comunes en inglés.",
-      ruta: "/modulo1/vocabulario",
+      titulo: "Verbo To be",
+      descripcion: "Una introduccion sobre que es el verbo To be.",
+      ruta: "/modulo1/tobe",
     },
     {
       id: "pronunciacion",
