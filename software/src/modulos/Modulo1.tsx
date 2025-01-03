@@ -17,17 +17,21 @@ const Modulo1: React.FC = () => {
     },
     {
       id: "pronunciacion",
-      titulo: "Pronunciación Inicial",
-      descripcion:
-        "Mejora tu pronunciación con ejercicios básicos de fonética.",
-      ruta: "/modulo1/pronunciacion",
+      titulo: "Pronombres en Inglés",
+      descripcion: "Una breve introduccion a los Pronombres personales.",
+      ruta: "/modulo1/pronombres",
+    },
+    {
+      id: "presentarse",
+      titulo: "Presentarse a si mismo",
+      descripcion: "Practica como presentarte a ti mismo en una entrevista.",
+      ruta: "/modulo1/presentarse",
     },
     {
       id: "lectura",
-      titulo: "Lectura Comprensiva",
-      descripcion:
-        "Practica la lectura con textos cortos y sencillos en inglés.",
-      ruta: "/modulo1/lectura",
+      titulo: "Informacion Personal Basica",
+      descripcion: "Practica como dar tu informacion personal mediate IA.",
+      ruta: "/modulo1/personal",
     },
   ];
 

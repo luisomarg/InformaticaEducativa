@@ -8,6 +8,9 @@ import Gramatica from "./modulos/modulo1/Gramatica";
 import Pronunciacion from "./modulos/modulo1/Pronunciacion";
 import Basico from "./modulos/modulo1/Basico";
 import Tobe from "./modulos/modulo1/Tobe";
+import Pronombres from "./modulos/modulo1/Pronombres";
+import Presentarse from "./modulos/modulo1/Presentarse";
+import Personal from "./modulos/modulo1/Personal";
 
 const App: React.FC = () => {
   return (
@@ -21,6 +24,9 @@ const App: React.FC = () => {
         <Route path="/modulo1/gramatica" element={<Gramatica />} />
         <Route path="/modulo1/pronunciacion" element={<Pronunciacion />} />
         <Route path="/modulo1/tobe" element={<Tobe />} />
+        <Route path="/modulo1/pronombres" element={<Pronombres />} />
+        <Route path="/modulo1/presentarse" element={<Presentarse />} />
+        <Route path="/modulo1/personal" element={<Personal />} />
       </Routes>
     </Router>
   );
