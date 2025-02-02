@@ -11,6 +11,10 @@ import Tobe from "./modulos/modulo1/Tobe";
 import Pronombres from "./modulos/modulo1/Pronombres";
 import Presentarse from "./modulos/modulo1/Presentarse";
 import Personal from "./modulos/modulo1/Personal";
+import Modulo2 from "./modulos/Modulo2";
+import There from "./modulos/modulo2/There";
+import Lugar from "./modulos/modulo2/Lugar";
+import VocabularioAcademico from "./modulos/modulo2/VocabularioAcademico";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +31,13 @@ const App: React.FC = () => {
         <Route path="/modulo1/pronombres" element={<Pronombres />} />
         <Route path="/modulo1/presentarse" element={<Presentarse />} />
         <Route path="/modulo1/personal" element={<Personal />} />
+        <Route path="/modulo2" element={<Modulo2 />} />
+        <Route path="/modulo2/there" element={<There />} />
+        <Route path="/modulo2/lugar" element={<Lugar />} />
+        <Route
+          path="/modulo2/vocabularioAcademico"
+          element={<VocabularioAcademico />}
+        />
       </Routes>
     </Router>
   );

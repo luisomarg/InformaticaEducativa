@@ -1,5 +1,6 @@
 import React from "react";
 import TarjetaInicio from "./TarjetaInicio";
+import logotipo from "../multimedia/logotipo.png";
 
 const Inicio: React.FC = () => {
   const tarjetas = [
@@ -25,7 +26,15 @@ const Inicio: React.FC = () => {
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">Bienvenido a tu Curso de Inglés</h1>
+      <div className="text-center mb-4">
+        <img
+          src={logotipo}
+          alt="Logotipo"
+          className="img-fluid"
+          style={{ maxWidth: "200px" }}
+        />
+      </div>
+      <h1 className="mb-4 text-center">Bienvenido a tu Curso de Inglés</h1>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {tarjetas.map((tarjeta, index) => (
           <div key={index} className="col">
