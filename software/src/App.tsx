@@ -15,6 +15,10 @@ import Modulo2 from "./modulos/Modulo2";
 import There from "./modulos/modulo2/There";
 import Lugar from "./modulos/modulo2/Lugar";
 import VocabularioAcademico from "./modulos/modulo2/VocabularioAcademico";
+import Modulo3 from "./modulos/Modulo3";
+import ComunicacionTecnica from "./modulos/modulo3/ComunicacionTecnica";
+import DocumentacionSoftware from "./modulos/modulo3/DocumentacionSoftware";
+import EntrevistaTecnica from "./modulos/modulo3/EntrevistaTecnica";
 
 const App: React.FC = () => {
   return (
@@ -37,6 +41,19 @@ const App: React.FC = () => {
         <Route
           path="/modulo2/vocabularioAcademico"
           element={<VocabularioAcademico />}
+        />
+        <Route path="/modulo3" element={<Modulo3 />} />
+        <Route
+          path="/modulo3/comunicacionTecnica"
+          element={<ComunicacionTecnica />}
+        />
+        <Route
+          path="/modulo3/documentacion-software"
+          element={<DocumentacionSoftware />}
+        />
+        <Route
+          path="/modulo3/entrevistaTecnica"
+          element={<EntrevistaTecnica />}
         />
       </Routes>
     </Router>

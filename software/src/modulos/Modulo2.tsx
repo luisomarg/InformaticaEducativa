@@ -21,26 +21,6 @@ const Modulo2: React.FC = () => {
       descripcion: "Una breve leccion sobre los terminos mas comunes.",
       ruta: "/modulo2/vocabularioAcademico",
     },
-    {
-      id: "escrituraCreativa",
-      titulo: "Escritura Creativa",
-      descripcion: "Desarrolla habilidades de escritura creativa en inglés.",
-      ruta: "/modulo2/escritura-creativa",
-    },
-    {
-      id: "comprensionAuditiva",
-      titulo: "Comprensión Auditiva",
-      descripcion:
-        "Mejora tu capacidad para entender el inglés hablado con ejercicios de escucha.",
-      ruta: "/modulo2/comprension-auditiva",
-    },
-    {
-      id: "gramaticaIntermedia",
-      titulo: "Gramática Intermedia",
-      descripcion:
-        "Profundiza en conceptos gramaticales más avanzados del inglés.",
-      ruta: "/modulo2/gramatica-intermedia",
-    },
   ];
 
   return (
